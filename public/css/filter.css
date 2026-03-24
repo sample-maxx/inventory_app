@@ -1,0 +1,54 @@
+.pack{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-auto-rows: auto;
+        overflow: auto;
+    }
+    .card {
+        background: linear-gradient(to right, #FFD580, #FFA500, #FF8C00);
+        display: grid;
+        grid-template-rows: 25% 75%;
+        height:147px;
+        justify-items: center;
+        margin: 10px;
+        border: 1px solid white;
+        border-radius: 10%;
+    }
+    .card-bottom{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size:18px;
+    }
+    .card-bottom p{
+        align-self: center;
+    }
+    span{
+        background-color: crimson;
+        display: grid;
+        grid-template-columns: 7fr 1fr;
+        margin:5px;
+        align-items: center;
+        color:white;
+        font-weight: 600;
+        height:30px;
+        border-radius:50px;
+        padding-right:5px;
+    }
+    span button{
+        border-radius:5px;
+        border:none;
+        height: 24px;
+        width:24px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin:2px;
+    }
+    button img{
+        height:100%;
+        text-align: center;
+    }
+   

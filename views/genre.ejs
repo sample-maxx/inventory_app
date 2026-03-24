@@ -1,0 +1,28 @@
+<html>
+<head>
+    <title>Genre page</title>
+</head>
+<link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="/css/filter.css">
+<body>
+    <nav>
+   <%- include('partials/header') %>
+    <main>
+    <%- include('partials/sidebar') %>
+    <div class='pack'>
+    <% for (let i = 0; i < games.length; i++) { %>
+        <div class='card' data-id="<%= games[i].genre %>">
+        <span><h6>Genre</h6><button class="delete_btn"><img id='delete_img' src="/images/delete.svg"></button></span>
+        <div class="card-bottom">
+        <p><%= games[i].genre %></p>
+        </div>
+        </div>
+    <% } %>
+    </div>
+    </main>
+</nav>
+    <script src="/js/script.js"></script>
+    <script src="/js/genrefilter.js"></script>
+</body>
+
+</html>

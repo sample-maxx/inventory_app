@@ -1,0 +1,93 @@
+ p,h6{
+        overflow: hidden;
+        margin:0px 20px;
+    }
+    header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: aqua;
+        height:15%;
+    }
+    main{
+        height:85%;
+        display: grid;
+        grid-template-columns: 1fr 6fr;
+    }
+    header h1{
+        margin:0px;
+    }
+    .left button{
+        width:180px;
+        height:50px;
+        margin-top:30px;
+        background-color: #030fff; 
+  color: white;              
+  padding: 0px 24px;        
+  border: none;              
+  border-radius: 50px;        
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; 
+  font-size: 20px;          
+  font-weight: bold;         
+  cursor: pointer;           
+  transition: background-color 0.3s;
+  &:hover {
+  background-color: blue; /* Darker blue on hover */
+} 
+    }
+    body {
+        background-color: royalblue;
+        padding:0px;
+        margin:0px;
+    }
+    hr{
+        margin:10px;
+        grid-column:span 2;
+    }
+    a{
+        text-decoration: none;
+        color:inherit;
+    }
+    #filter_btn{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        align-items: center;
+    }
+    #filter p{
+        margin:0px;
+    }
+    #filter_img{
+        margin-left:20px;
+        filter:brightness(0) invert(1);
+        height:60%;
+    }
+    ul{
+        display: flex;
+        flex-direction: column;
+        
+        background-color: white;
+        list-style-type: none;
+        margin:0px;
+        padding:0px;
+        border-radius:0px 0px 25px 25px;
+        text-align: center;
+    }
+    li{
+        height:50px;
+        font-size:20px; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &:hover{
+            border:1px solid black;
+            border-radius:25px;
+        }
+    }
+    .left{
+        background-color:#168ef0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top:30px;
+    }

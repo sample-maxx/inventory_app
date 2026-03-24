@@ -1,0 +1,30 @@
+<html>
+<head>
+    <title>Homepage</title>
+</head>
+<link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="/css/index.css">
+<body>
+    <nav>
+   <%- include('partials/header') %>
+    <main>
+    <%- include('partials/sidebar') %>
+    <div class='pack'>
+    <% for (let i = 0; i < games.length; i++) { %>
+        <div class='card' data-id="<%= games[i].id %>">
+        <span><h6>New Game</h6><button class="edit_btn"><img id='edit_img' src="/images/square-edit-outline.svg"></button><button class="delete_btn"><img id='delete_img' src="/images/delete.svg"></button></span>
+        <div class="card-bottom">
+            <strong>Name</strong><p><%= games[i].name %></p>
+            <strong>Genre</strong><p><%= games[i].genre %></p>       
+            <strong>Developer</strong><p><%= games[i].developer %></p>
+        </div>
+        </div>
+    <% } %>
+    </div>
+    </main>
+</nav>
+    <script src="/js/script.js"></script>
+    <script src="/js/index.js"></script>
+</body>
+
+</html>
