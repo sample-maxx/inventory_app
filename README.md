@@ -38,7 +38,7 @@ node db/populatedb.js
 Running the App
 npm start
 
-App link:https://inventoryapp-production-9f66.up.railway.app/
+App link:https://inventoryapp-production-2744.up.railway.app/
 
 Routes and Controllers
 Routes Overview
